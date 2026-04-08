@@ -1,0 +1,148 @@
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("/images/background-hero.png");
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-section__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 22, 40, 0.72) 0%,
+    rgba(10, 22, 40, 0.58) 50%,
+    rgba(10, 22, 40, 0.78) 100%
+  );
+  z-index: 1;
+}
+
+.hero-section__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 0 24px;
+  max-width: 800px;
+}
+
+.hero-section__name {
+  font-size: clamp(52px, 8vw, var(--fs-h1));
+  font-weight: 800;
+  color: var(--color-white);
+  letter-spacing: -1px;
+  line-height: 1.05;
+  text-shadow: 0 2px 32px rgba(0, 0, 0, 0.6);
+}
+
+/* Title / subtitle / button — hidden until typing done */
+.hero-section__title,
+.hero-section__subtitle,
+.hero-section__btn {
+  opacity: 0;
+}
+
+.hero-section__reveal {
+  animation: hero-fade-up 0.55s ease forwards;
+}
+
+.hero-section__reveal--d1 { animation-delay: 0.12s; }
+.hero-section__reveal--d2 { animation-delay: 0.26s; }
+
+@keyframes hero-fade-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-section__title {
+  font-size: clamp(16px, 2.5vw, 22px);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.88);
+  letter-spacing: 0.02em;
+  margin-top: 4px;
+}
+
+.hero-section__subtitle {
+  font-size: clamp(14px, 1.8vw, 18px);
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 560px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.hero-section__btn {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 14px 40px;
+  border-radius: var(--radius-pill);
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  color: var(--color-white);
+  font-size: var(--fs-p);
+  font-weight: 600;
+  font-family: var(--font-primary);
+  letter-spacing: 0.04em;
+  transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+  cursor: pointer;
+}
+
+.hero-section__btn:hover {
+  background: var(--color-white);
+  color: var(--color-ocean-deep);
+  border-color: var(--color-white);
+}
+
+/* Scroll indicator — container bounces on Y, chevron stays rotated */
+.hero-section__scroll {
+  position: absolute;
+  bottom: 36px;
+  left: 50%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.85;
+  text-decoration: none;
+  animation: scroll-bounce 1.8s ease-in-out infinite;
+}
+
+.hero-section__scroll:hover {
+  opacity: 1;
+}
+
+/* Chevron arrow — static rotation, parent handles the Y movement */
+.hero-section__scroll-line {
+  display: block;
+  width: 28px;
+  height: 28px;
+  border-right: 3px solid rgba(255, 255, 255, 0.9);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.9);
+  transform: rotate(45deg);
+}
+
+@keyframes scroll-bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0);   opacity: 0.7; }
+  50%       { transform: translateX(-50%) translateY(8px); opacity: 1;   }
+}
+
+@media (max-width: 640px) {
+  .hero-section__content {
+    gap: 12px;
+  }
+
+  .hero-section__btn {
+    padding: 12px 32px;
+  }
+}
