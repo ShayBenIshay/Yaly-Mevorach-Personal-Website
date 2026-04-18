@@ -23,7 +23,7 @@ export default function Navbar() {
       </div>
       <div className="navbar__follow-links">
         <a
-          href="https://www.instagram.com/yaly_mevorach/"
+          href="https://www.instagram.com/yaly_mev?igsh=MXBpbG55cGZzYTkxZg%3D%3D"
           className="navbar__icon-link"
           target="_blank"
           rel="noopener noreferrer"
@@ -31,7 +31,7 @@ export default function Navbar() {
           <Image src={instagramIcon} alt="Instagram" width={28} height={28} />
         </a>
         <a
-          href="https://www.facebook.com/"
+          href="https://www.linkedin.com/in/yaly-mevorach-024a1810a"
           className="navbar__icon-link"
           target="_blank"
           rel="noopener noreferrer"

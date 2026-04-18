@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="footer__follow">
             <div className="footer__follow-links">
               <a
-                href="https://www.instagram.com/yaly_mevorach/"
+                href="https://www.instagram.com/yaly_mev?igsh=MXBpbG55cGZzYTkxZg%3D%3D"
                 className="footer__icon-link"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -26,7 +26,7 @@ export default function Footer() {
                 />
               </a>
               <a
-                href="https://www.facebook.com/"
+                href="https://www.linkedin.com/in/yaly-mevorach-024a1810a/"
                 className="footer__icon-link"
                 target="_blank"
                 rel="noopener noreferrer"
