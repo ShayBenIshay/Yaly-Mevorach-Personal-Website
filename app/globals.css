@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -12,8 +14,8 @@
   --fs-h3: 32px;
   --fs-p: 18px;
   --fs-logo: 28px;
-  --fs-small: 14px;
-  --fs-xsmall: 13px;
+  --fs-small: 12px;
+  --fs-xsmall: 10px;
 
   --color-black: #171717;
   --color-white: #ffffff;
@@ -84,19 +86,25 @@ a {
 .anim-fade-up {
   opacity: 0;
   transform: translateY(32px);
-  transition: opacity 0.75s ease, transform 0.75s ease;
+  transition:
+    opacity 0.75s ease,
+    transform 0.75s ease;
 }
 
 .anim-fade-left {
   opacity: 0;
   transform: translateX(-36px);
-  transition: opacity 0.75s ease, transform 0.75s ease;
+  transition:
+    opacity 0.75s ease,
+    transform 0.75s ease;
 }
 
 .anim-fade-right {
   opacity: 0;
   transform: translateX(36px);
-  transition: opacity 0.75s ease, transform 0.75s ease;
+  transition:
+    opacity 0.75s ease,
+    transform 0.75s ease;
 }
 
 .anim-fade-up.is-visible,

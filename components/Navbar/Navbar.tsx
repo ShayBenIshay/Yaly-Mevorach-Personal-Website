@@ -2,7 +2,7 @@ import Image from "next/image";
 import "./Navbar.css";
 
 const instagramIcon = "/instagram-icon.png";
-const facebookIcon = "/facebook-icon.png";
+const linkedinIcon = "/linkedin-icon.png";
 
 export default function Navbar() {
   return (
@@ -36,7 +36,7 @@ export default function Navbar() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image src={facebookIcon} alt="Facebook" width={28} height={28} />
+          <Image src={linkedinIcon} alt="LinkedIn" width={28} height={28} />
         </a>
       </div>
     </nav>

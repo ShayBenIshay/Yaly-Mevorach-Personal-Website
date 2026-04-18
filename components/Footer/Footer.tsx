@@ -2,7 +2,7 @@ import Image from "next/image";
 import "./Footer.css";
 
 const instagramIcon = "/instagram-icon.png";
-const facebookIcon = "/facebook-icon.png";
+const linkedinIcon = "/linkedin-icon.png";
 
 export default function Footer() {
   return (
@@ -32,8 +32,8 @@ export default function Footer() {
                 rel="noopener noreferrer"
               >
                 <Image
-                  src={facebookIcon}
-                  alt="Facebook"
+                  src={linkedinIcon}
+                  alt="LinkedIn"
                   width={28}
                   height={28}
                 />
