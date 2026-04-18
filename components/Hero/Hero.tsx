@@ -26,26 +26,39 @@ export default function Hero() {
     <section className="hero-section" id="hero">
       <div className="hero-section__overlay" />
       <div className="hero-section__content">
-
         <h1 className="hero-section__name" aria-label={FULL_NAME}>
           {displayed}
         </h1>
 
-        <p className={`hero-section__title${showRest ? " hero-section__reveal" : ""}`}>
-          PhD Candidate – University of Haifa
-        </p>
-        <p className={`hero-section__subtitle${showRest ? " hero-section__reveal hero-section__reveal--d1" : ""}`}>
-          investigating the impact of social structures on sperm whale communication under Project CETI
-        </p>
-        <a
-          href="#contact"
-          className={`hero-section__btn${showRest ? " hero-section__reveal hero-section__reveal--d2" : ""}`}
+        <h3
+          className={`hero-section__title${showRest ? " hero-section__reveal" : ""}`}
         >
-          Contact Me
-        </a>
+          Whale and dolphin biologist
+        </h3>
+        <ul className="hero-section__list">
+          <li
+            className={`hero-section__subtitle${showRest ? " hero-section__reveal hero-section__reveal--d1" : ""}`}
+          >
+            PhD student, University of Haifa
+          </li>
+          <li
+            className={`hero-section__subtitle${showRest ? " hero-section__reveal hero-section__reveal--d1" : ""}`}
+          >
+            Field biologist, Project CETI
+          </li>
+          <li
+            className={`hero-section__subtitle${showRest ? " hero-section__reveal hero-section__reveal--d1" : ""}`}
+          >
+            Head of the Israeli deep diving cetacean project
+          </li>
+        </ul>
       </div>
 
-      <a href="#about" className="hero-section__scroll" aria-label="Scroll down">
+      <a
+        href="#about"
+        className="hero-section__scroll"
+        aria-label="Scroll down"
+      >
         <span className="hero-section__scroll-line" />
       </a>
     </section>

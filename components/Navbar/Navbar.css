@@ -54,13 +54,38 @@
   color: var(--color-white);
   cursor: pointer;
   text-decoration: none;
-  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .navbar__btn:hover {
   background: var(--color-white);
   color: var(--color-ocean-deep);
   border-color: var(--color-white);
+}
+
+.navbar__follow-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar__icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.75;
+  filter: invert(1);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.navbar__icon-link:hover {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 @media (max-width: 640px) {

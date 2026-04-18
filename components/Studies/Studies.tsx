@@ -8,7 +8,7 @@ const degrees = [
     years: "2015–2018",
   },
   {
-    degree: "Marine Mammal Course",
+    degree: "Marine Mammal Summer Course",
     institution: "Dalhousie University",
     years: "2018",
   },
@@ -19,6 +19,11 @@ const degrees = [
     note: "Magna Cum Laude, Dean's Excellence Award. Thesis: Population Dynamics of Common and Bottlenose Dolphins along the Israeli Coast",
   },
   {
+    degree: "Bioacoustic and Communication Summer Course",
+    institution: "University of southern Denmark",
+    years: "2024",
+  },
+  {
     degree: "PhD Candidate",
     institution: "University of Haifa",
     years: "Present",
@@ -26,7 +31,7 @@ const degrees = [
   },
 ];
 
-const dalhousieQuote = `One of my first exciting experiences as a marine biologist was being selected for a full scholarship to the Marine Mammal course at Dalhousie University in Halifax, Canada. This renowned two-week course is led by one of the most established marine mammal science labs in the world, headed by Prof. Hal Whitehead. After completing the course, I decided to change my plans and forgo traveling to western Canada so I could stay and volunteer in the lab, contributing to data processing for the Dominica Sperm Whale Project. That decision turned out to be one of the best I've ever made — it eventually led me to pursue my PhD with this incredible project.`;
+const dalhousieQuote = `One of my first exciting experiences as a marine biologist was being selected for a full scholarship to the Marine Mammal course at Dalhousie University in Halifax, Canada. This renowned two-week course is led by one of the most established marine mammal science labs in the world, headed by Prof. Hal Whitehead. After completing the course, I decided to change my plans and forgo traveling to western Canada so I could stay and volunteer in the lab, contributing to data processing for the Dominica Sperm Whale Project. That decision turned out to be one of the best I've ever made - it eventually led me to pursue my PhD with this incredible project.`;
 
 export default function Studies() {
   return (

@@ -46,7 +46,7 @@
   text-shadow: 0 2px 32px rgba(0, 0, 0, 0.6);
 }
 
-/* Title / subtitle / button — hidden until typing done */
+/* Title / subtitle / button - hidden until typing done */
 .hero-section__title,
 .hero-section__subtitle,
 .hero-section__btn {
@@ -57,12 +57,22 @@
   animation: hero-fade-up 0.55s ease forwards;
 }
 
-.hero-section__reveal--d1 { animation-delay: 0.12s; }
-.hero-section__reveal--d2 { animation-delay: 0.26s; }
+.hero-section__reveal--d1 {
+  animation-delay: 0.12s;
+}
+.hero-section__reveal--d2 {
+  animation-delay: 0.26s;
+}
 
 @keyframes hero-fade-up {
-  from { opacity: 0; transform: translateY(10px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero-section__title {
@@ -71,6 +81,14 @@
   color: rgba(255, 255, 255, 0.88);
   letter-spacing: 0.02em;
   margin-top: 4px;
+}
+
+.hero-section__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  gap: 8px;
 }
 
 .hero-section__subtitle {
@@ -93,7 +111,10 @@
   font-weight: 600;
   font-family: var(--font-primary);
   letter-spacing: 0.04em;
-  transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease;
   cursor: pointer;
 }
 
@@ -103,7 +124,7 @@
   border-color: var(--color-white);
 }
 
-/* Scroll indicator — container bounces on Y, chevron stays rotated */
+/* Scroll indicator - container bounces on Y, chevron stays rotated */
 .hero-section__scroll {
   position: absolute;
   bottom: 36px;
@@ -122,7 +143,7 @@
   opacity: 1;
 }
 
-/* Chevron arrow — static rotation, parent handles the Y movement */
+/* Chevron arrow - static rotation, parent handles the Y movement */
 .hero-section__scroll-line {
   display: block;
   width: 28px;
@@ -133,8 +154,15 @@
 }
 
 @keyframes scroll-bounce {
-  0%, 100% { transform: translateX(-50%) translateY(0);   opacity: 0.7; }
-  50%       { transform: translateX(-50%) translateY(8px); opacity: 1;   }
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateX(-50%) translateY(8px);
+    opacity: 1;
+  }
 }
 
 @media (max-width: 640px) {
