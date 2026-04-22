@@ -14,6 +14,12 @@ export default function Navbar() {
         <a href="#about" className="navbar__link">
           About
         </a>
+        <a href="#projects" className="navbar__link">
+          Projects
+        </a>
+        <a href="#publications" className="navbar__link">
+          Publications
+        </a>
         <a href="#studies" className="navbar__link">
           Studies
         </a>

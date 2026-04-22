@@ -10,6 +10,13 @@ export default function Footer() {
       <div className="footer__inner">
         <div className="footer__top">
           <span className="footer__logo">Yaly Mevorach</span>
+          <nav className="footer__nav">
+            <a href="#about" className="footer__nav-link">About</a>
+            <a href="#studies" className="footer__nav-link">Studies</a>
+            <a href="#vision" className="footer__nav-link">Vision</a>
+            <a href="#projects" className="footer__nav-link">Projects</a>
+            <a href="#publications" className="footer__nav-link">Publications</a>
+          </nav>
           <div className="footer__follow">
             <div className="footer__follow-links">
               <a
@@ -48,7 +55,14 @@ export default function Footer() {
             © {new Date().getFullYear()} Yaly Mevorach. All rights reserved.
           </p>
           <p className="footer__credit">
-            Designed and developed by <strong>Shay Tech Solutions</strong>
+            Designed and developed by{" "}
+            <a
+              href="https://www.shaytechsolutions.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <strong>Shay Tech Solutions</strong>
+            </a>
           </p>
         </div>
       </div>

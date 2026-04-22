@@ -15,13 +15,13 @@ const jsonLd = {
   "@type": "Person",
   name: "Yaly Mevorach",
   url: SITE_URL,
-  jobTitle: "PhD Candidate",
+  jobTitle: "PhD Student",
   affiliation: {
     "@type": "Organization",
     name: "University of Haifa",
   },
   description:
-    "Marine biologist and PhD candidate at the University of Haifa, researching the impact of social structures on sperm whale communication under Project CETI.",
+    "Marine biologist and PhD student at the University of Haifa, researching the impact of social structures on sperm whale communication under Project CETI.",
   knowsAbout: [
     "Marine biology",
     "Cetacean research",
@@ -35,15 +35,15 @@ const jsonLd = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Yaly Mevorach | Marine Biologist & PhD Candidate",
+    default: "Yaly Mevorach | Marine Biologist & PhD Student",
     template: "%s | Yaly Mevorach",
   },
   description:
-    "Yaly Mevorach is a PhD candidate at the University of Haifa investigating the impact of social structures on sperm whale communication under Project CETI. Marine biologist passionate about cetacean conservation in the eastern Mediterranean.",
+    "Yaly Mevorach is a PhD student at the University of Haifa Investigating the The influence of social structure on communication complexity of sperm whales (Physeter macrocephalus) with Dr. Shane Gero and Prof. Dan Tchernov . Marine biologist passionate about cetacean conservation in the eastern Mediterranean.",
   keywords: [
     "Yaly Mevorach",
     "marine biologist",
-    "PhD candidate",
+    "PhD student",
     "sperm whales",
     "cetacean research",
     "Project CETI",
@@ -59,9 +59,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: SITE_URL,
-    title: "Yaly Mevorach | Marine Biologist & PhD Candidate",
+    title: "Yaly Mevorach | Marine Biologist & PhD Student",
     description:
-      "PhD candidate at the University of Haifa investigating sperm whale communication under Project CETI. Passionate about cetacean conservation in the eastern Mediterranean.",
+      "PhD student at the University of Haifa investigating sperm whale communication under Project CETI. Passionate about cetacean conservation in the eastern Mediterranean.",
     siteName: "Yaly Mevorach",
     locale: "en_US",
     images: [
@@ -69,15 +69,15 @@ export const metadata: Metadata = {
         url: "/images/YalyMevorach-personal-image.png",
         width: 1200,
         height: 630,
-        alt: "Yaly Mevorach – Marine Biologist & PhD Candidate",
+        alt: "Yaly Mevorach – Marine Biologist & PhD Student",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Yaly Mevorach | Marine Biologist & PhD Candidate",
+    title: "Yaly Mevorach | Marine Biologist & PhD Student",
     description:
-      "PhD candidate at the University of Haifa investigating sperm whale communication under Project CETI.",
+      "PhD student at the University of Haifa investigating sperm whale communication under Project CETI.",
     images: ["/images/YalyMevorach-personal-image.png"],
   },
   robots: {

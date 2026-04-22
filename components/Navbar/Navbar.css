@@ -27,7 +27,7 @@
 .navbar__links {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 24px;
 }
 
 .navbar__link {
@@ -88,7 +88,7 @@
   transform: scale(1.1);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 860px) {
   .navbar {
     padding: 16px 24px;
   }

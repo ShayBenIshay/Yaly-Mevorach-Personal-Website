@@ -25,6 +25,26 @@
   color: var(--color-white);
 }
 
+.footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 24px;
+}
+
+.footer__nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  transition: color 0.2s ease;
+}
+
+.footer__nav-link:hover {
+  color: var(--color-white);
+}
+
 .footer__btn {
   font-size: 15px;
   font-weight: 600;

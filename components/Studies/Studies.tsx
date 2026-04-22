@@ -24,10 +24,10 @@ const degrees = [
     years: "2024",
   },
   {
-    degree: "PhD Candidate",
-    institution: "University of Haifa",
+    degree: "PhD Student",
+    institution: "University of Haifa - Project CETI",
     years: "Present",
-    note: "investigating the impact of social structures on sperm whale communication under Project CETI",
+    note: "Investigating the The influence of social structure on communication complexity of sperm whales (Physeter macrocephalus) with Dr. Shane Gero and Prof. Dan Tchernov ",
   },
 ];
 
