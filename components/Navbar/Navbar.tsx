@@ -7,9 +7,39 @@ import "./Navbar.css";
 const instagramIcon = "/instagram-icon.png";
 const linkedinIcon = "/linkedin-icon.png";
 
+// How many px must be scrolled in one direction before the navbar reacts
+const SCROLL_THRESHOLD = 60;
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [hidden, setHidden] = useState(false);
   const navRef = useRef<HTMLElement>(null);
+  const lastScrollY = useRef(0);
+  const accumulatedDelta = useRef(0);
+
+  // Hide on scroll-down, reveal on scroll-up, with a threshold to avoid jitter
+  useEffect(() => {
+    function handleScroll() {
+      const currentY = window.scrollY;
+      const delta = currentY - lastScrollY.current;
+
+      accumulatedDelta.current += delta;
+
+      if (accumulatedDelta.current > SCROLL_THRESHOLD) {
+        setHidden(true);
+        setMenuOpen(false);
+        accumulatedDelta.current = 0;
+      } else if (accumulatedDelta.current < -SCROLL_THRESHOLD) {
+        setHidden(false);
+        accumulatedDelta.current = 0;
+      }
+
+      lastScrollY.current = currentY;
+    }
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -28,7 +58,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="navbar" ref={navRef}>
+    <nav className={`navbar${hidden ? " navbar--hidden" : ""}`} ref={navRef}>
       <a href="#hero" className="navbar__logo">
         Yaly Mevorach
       </a>
