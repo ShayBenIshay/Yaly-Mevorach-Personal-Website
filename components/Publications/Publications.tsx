@@ -92,6 +92,10 @@ const publicationsByYear: YearGroup[] = [
     year: "2026",
     entries: [
       {
+        type: "talk",
+        text: "Deep Sea Cetaceans in Israel: Fascinating Findings and Looming Threats. The 54th Annual Conference for Science and the Environment, Jerusalem, Israel.",
+      },
+      {
         type: "paper",
         text: "Description of a collaborative sperm whale birth and shifts in coda vocal styles during key events. Aluma, Y., Baron, Z., Barrett, R., Baumgartner, C., Beguš, G., Bhattacharya, S., Bronstein, M.M., Dahan, S., Davis, O., De Haas, S. & Defoe, J. Scientific Reports, 16(1), 9206.",
       },
@@ -116,8 +120,8 @@ export default function Publications() {
       <div className="publications__images">
         <div className="publications__image-frame publications__image-frame--wide">
           <Image
-            src="/images/publications-image-2.png"
-            alt="Yaly Mevorach presenting at a public outreach event"
+            src="/images/publications-image-2.jpg"
+            alt="Presenting at the ECS 37th Conference in Dundee, Scotland"
             fill
             sizes="(max-width: 768px) 100vw, 58vw"
             style={{ objectFit: "cover", objectPosition: "center 35%" }}
@@ -125,11 +129,11 @@ export default function Publications() {
         </div>
         <div className="publications__image-frame publications__image-frame--portrait">
           <Image
-            src="/images/publications-image-1.png"
-            alt="Yaly Mevorach giving a talk at a scientific conference"
+            src="/images/publications-image-1.jpg"
+            alt="Presenting at the 54th Annual Conference for Science and the Environment, Jerusalem"
             fill
             sizes="(max-width: 768px) 100vw, 42vw"
-            style={{ objectFit: "cover", objectPosition: "center 20%" }}
+            style={{ objectFit: "cover", objectPosition: "center 30%" }}
           />
         </div>
       </div>

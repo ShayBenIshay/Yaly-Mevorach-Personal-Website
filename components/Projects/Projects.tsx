@@ -1,8 +1,18 @@
+"use client";
+
 import Image from "next/image";
 import AnimateOnScroll from "@/components/AnimateOnScroll/AnimateOnScroll";
+import { useParallax } from "@/hooks/useParallax";
 import "./Projects.css";
 
 const projects = [
+  {
+    years: "2026 – Present",
+    title: "'The Silent World' with Delphis NGO",
+    description:
+      "Designed to raise public awareness and drive policy on ocean noise pollution, this initiative blends education with real-world conservation advocacy. The project introduces the wonders of underwater bioacoustics, exploring how marine mammals use sound to navigate, communicate, and survive, and highlights the growing threat of noise pollution. Through this project, we are developing educational programs for formal curricula and the Delphis visitor center, while collaborating with government ministries on noise mitigation policies.",
+    link: "https://www.delphis.ngo/",
+  },
   {
     years: "2017 – Present",
     title: "The Israeli Dolphin Project",
@@ -48,18 +58,22 @@ const projects = [
 ];
 
 export default function Projects() {
+  const { sectionRef, bgRef } = useParallax<HTMLDivElement, HTMLDivElement>(0.35);
+
   return (
     <section className="projects" id="projects">
       {/* Full-bleed whale banner */}
-      <div className="projects__banner">
-        <Image
-          src="/images/bg-jumping-whale.png"
-          alt="Whale breaching the ocean surface"
-          fill
-          sizes="100vw"
-          style={{ objectFit: "cover", objectPosition: "center 55%" }}
-          priority={false}
-        />
+      <div className="projects__banner" ref={sectionRef}>
+        <div className="projects__banner-parallax" ref={bgRef}>
+          <Image
+            src="/images/bg-jumping-whale.png"
+            alt="Whale breaching the ocean surface"
+            fill
+            sizes="100vw"
+            style={{ objectFit: "cover", objectPosition: "center 55%" }}
+            priority={false}
+          />
+        </div>
         <div className="projects__banner-overlay" />
         <AnimateOnScroll className="projects__banner-text" animClass="anim-fade-up">
           <h2 className="projects__banner-heading">Projects</h2>
@@ -85,6 +99,16 @@ export default function Projects() {
                     <span className="projects__item-years">{p.years}</span>
                     <span className="projects__item-title">{p.title}</span>
                     <p className="projects__item-desc">{p.description}</p>
+                    {p.link && (
+                      <a
+                        href={p.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="projects__item-link"
+                      >
+                        Learn more →
+                      </a>
+                    )}
                   </div>
                 </li>
               ))}
