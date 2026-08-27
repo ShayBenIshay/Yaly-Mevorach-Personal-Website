@@ -20,7 +20,7 @@
 }
 
 .navbar--hidden {
-  transform: translateY(-110%);
+  transform: translateY(-220%);
 }
 
 .navbar__logo {
