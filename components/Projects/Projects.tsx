@@ -66,7 +66,7 @@ export default function Projects() {
       <div className="projects__banner" ref={sectionRef}>
         <div className="projects__banner-parallax" ref={bgRef}>
           <Image
-            src="/images/bg-jumping-whale.png"
+            src="/images/bg-jumping-whale.webp"
             alt="Whale breaching the ocean surface"
             fill
             sizes="100vw"
@@ -124,7 +124,7 @@ export default function Projects() {
             <div className="projects__image-stack">
               <div className="projects__image-frame projects__image-frame--top">
                 <Image
-                  src="/images/project-image-1.png"
+                  src="/images/project-image-1.webp"
                   alt="Yaly Mevorach doing passive acoustic monitoring from a boat"
                   fill
                   sizes="(max-width: 900px) 100vw, 38vw"
@@ -133,7 +133,7 @@ export default function Projects() {
               </div>
               <div className="projects__image-frame projects__image-frame--bottom">
                 <Image
-                  src="/images/project-image-2.png"
+                  src="/images/project-image-2.webp"
                   alt="Yaly Mevorach in the field with acoustic monitoring equipment"
                   fill
                   sizes="(max-width: 900px) 100vw, 38vw"

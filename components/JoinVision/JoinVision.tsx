@@ -9,7 +9,7 @@ export default function JoinVision() {
       <div className="join-vision__images">
         <div className="join-vision__image-frame join-vision__image-frame--wide">
           <Image
-            src="/images/ConventionBackground.png"
+            src="/images/ConventionBackground.webp"
             alt="35th European Cetacean Society conference auditorium"
             fill
             sizes="(max-width: 768px) 100vw, 60vw"
@@ -18,7 +18,7 @@ export default function JoinVision() {
         </div>
         <div className="join-vision__image-frame join-vision__image-frame--portrait">
           <Image
-            src="/images/YalySpeech-image.png"
+            src="/images/YalySpeech-image.webp"
             alt="Yaly Mevorach presenting at the 35th ECS Conference"
             fill
             sizes="(max-width: 768px) 100vw, 40vw"

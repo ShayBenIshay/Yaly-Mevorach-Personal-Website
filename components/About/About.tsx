@@ -18,7 +18,7 @@ export default function About() {
         >
           <div className="about__image-frame">
             <Image
-              src="/images/YalyMevorach-personal-image.png"
+              src="/images/YalyMevorach-personal-image.webp"
               alt="Yaly Mevorach in the field"
               fill
               sizes="(max-width: 768px) 100vw, 45vw"

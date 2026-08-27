@@ -13,7 +13,7 @@
 .vision__bg {
   position: absolute;
   inset: -30% 0;
-  background-image: url("/images/background-whale.png");
+  background-image: url("/images/background-whale.webp");
   background-size: cover;
   background-position: center 40%;
   background-repeat: no-repeat;

@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/images/YalyMevorach-personal-image.png",
+        url: "/images/YalyMevorach-personal-image.webp",
         width: 1200,
         height: 630,
         alt: "Yaly Mevorach – Marine Biologist & PhD Student",
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     title: "Yaly Mevorach | Marine Biologist & PhD Student",
     description:
       "PhD student at the University of Haifa investigating sperm whale communication under Project CETI.",
-    images: ["/images/YalyMevorach-personal-image.png"],
+    images: ["/images/YalyMevorach-personal-image.webp"],
   },
   robots: {
     index: true,

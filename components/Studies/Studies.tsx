@@ -62,7 +62,7 @@ export default function Studies() {
         <div className="studies__image-col">
           <div className="studies__image-frame">
             <Image
-              src="/images/graduation-image.png"
+              src="/images/graduation-image.webp"
               alt="Yaly Mevorach at graduation"
               fill
               sizes="(max-width: 900px) 100vw, 45vw"

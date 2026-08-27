@@ -120,7 +120,7 @@ export default function Publications() {
       <div className="publications__images">
         <div className="publications__image-frame publications__image-frame--wide">
           <Image
-            src="/images/publications-image-2.jpg"
+            src="/images/publications-image-2.webp"
             alt="Presenting at the ECS 37th Conference in Dundee, Scotland"
             fill
             sizes="(max-width: 768px) 100vw, 58vw"
@@ -129,7 +129,7 @@ export default function Publications() {
         </div>
         <div className="publications__image-frame publications__image-frame--portrait">
           <Image
-            src="/images/publications-image-1.jpg"
+            src="/images/publications-image-1.webp"
             alt="Presenting at the 54th Annual Conference for Science and the Environment, Jerusalem"
             fill
             sizes="(max-width: 768px) 100vw, 42vw"
